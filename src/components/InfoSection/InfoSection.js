@@ -1,7 +1,6 @@
 import React from "react";
 import { Button } from "../../globalStyles";
 
-import professor from "../../images/professor.svg";
 import {
   SectionContainer,
   Row,
@@ -12,17 +11,17 @@ import {
   Image,
 } from "./InfoSection.elements";
 
-const InfoSection = () => {
+const InfoSection = ({ heading, subHeading, buttonText, image, reverse }) => {
   return (
     <SectionContainer>
-      <Row>
+      <Row reverse={reverse}>
         <Col1>
-          <Heading>Devi Secondary School</Heading>
-          <SubHeading>"Better Place for Quality Education"</SubHeading>
-          <Button primary>Know More</Button>
+          <Heading>{heading}</Heading>
+          <SubHeading>{subHeading}</SubHeading>
+          <Button primary>{buttonText}</Button>
         </Col1>
         <Col2>
-          <Image src={professor} />
+          <Image src={image} />
         </Col2>
       </Row>
     </SectionContainer>

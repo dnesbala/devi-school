@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+import { colors } from "../../theme";
 import {
   Nav,
   NavbarContainer,
@@ -30,49 +31,49 @@ const Navbar = () => {
         <NavLinks hamburgerClick={hamburgerClick}>
           <NavLink
             to="/"
-            activeStyle={{ color: "#fc766aff" }}
+            activeStyle={{ color: colors.secondary }}
             onClick={closeMobileMenu}
           >
             Home
           </NavLink>
           <NavLink
             to="/about"
-            activeStyle={{ color: "#fc766aff" }}
+            activeStyle={{ color: colors.secondary }}
             onClick={closeMobileMenu}
           >
             About
           </NavLink>
           <NavLink
             to="/programmes"
-            activeStyle={{ color: "#fc766aff" }}
+            activeStyle={{ color: colors.secondary }}
             onClick={closeMobileMenu}
           >
             Programmes
           </NavLink>
           <NavLink
             to="/notices"
-            activeStyle={{ color: "#fc766aff" }}
+            activeStyle={{ color: colors.secondary }}
             onClick={closeMobileMenu}
           >
             Notices
           </NavLink>
           <NavLink
             to="/gallery"
-            activeStyle={{ color: "#fc766aff" }}
+            activeStyle={{ color: colors.secondary }}
             onClick={closeMobileMenu}
           >
             Gallery
           </NavLink>
           <NavLink
             to="/contact"
-            activeStyle={{ color: "#fc766aff" }}
+            activeStyle={{ color: colors.secondary }}
             onClick={closeMobileMenu}
           >
             Contact
           </NavLink>
           <NavLink
             to="/application-form"
-            activeStyle={{ color: "#fc766aff" }}
+            activeStyle={{ color: colors.secondary }}
             onClick={closeMobileMenu}
           >
             Application Form

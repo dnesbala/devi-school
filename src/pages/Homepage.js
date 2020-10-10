@@ -1,8 +1,18 @@
 import React from "react";
-import InfoSection from "../components/InfoSection/InfoSection";
+
+import { InfoSection, Programmes, Notices } from "../components";
+
+import { schoolInfoSection, admissionInfoSection } from "../data/homepageData";
 
 const Homepage = () => {
-  return <InfoSection />;
+  return (
+    <>
+      <InfoSection {...schoolInfoSection} />
+      <Programmes />
+      <InfoSection {...admissionInfoSection} reverse />
+      <Notices />
+    </>
+  );
 };
 
 export default Homepage;

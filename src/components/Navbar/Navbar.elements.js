@@ -3,10 +3,16 @@ import styled from "styled-components";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
 
+import { colors } from "../../theme";
+
 export const Nav = styled.nav`
-  background-color: #184a45ff;
+  background-color: ${colors.primary};
   width: 100%;
-  box-shadow: 0px 2px 2px 0px grey;
+  box-shadow: 0px 2px 2px 0px black;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
 `;
 
 export const NavbarContainer = styled.div`
@@ -21,7 +27,7 @@ export const NavLogo = styled(Link)`
   width: 100px;
   margin-left: 40px;
   font-size: 2rem;
-  color: #59ce8f;
+  color: ${colors.white};
 `;
 
 export const NavLinks = styled.ul`
@@ -39,7 +45,7 @@ export const NavLinks = styled.ul`
     top: 70px;
     left: ${({ hamburgerClick }) => (hamburgerClick ? 0 : "-100%")};
     transition: all 0.5s ease;
-    background-color: #184a45ff;
+    background-color: ${colors.primary};
   }
 `;
 
@@ -52,7 +58,7 @@ export const NavLink = styled(navLink)`
   transition: color 0.3s linear;
 
   &:hover {
-    color: #fc766aff;
+    color: ${colors.secondary};
   }
 
   @media screen and (max-width: 970px) {
@@ -78,7 +84,7 @@ export const NavHamburger = styled(GiHamburgerMenu)`
 `;
 
 export const NavClose = styled(MdClose)`
-  color: #fff;
+  color: ${colors.white};
   font-size: 2.2rem;
   margin-right: 20px;
   cursor: pointer;
